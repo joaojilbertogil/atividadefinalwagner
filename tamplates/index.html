@@ -1,0 +1,28 @@
+< html  lang =" en " > 
+    < cabeça > 
+        < título > Perfil </ título > 
+        < link  rel =" folha de estilo " href =" ../static/style.css " > 
+    </ cabeça > 
+  
+    < body  bgcolor =" #e6ffee " > 
+        < div  classe =" um " > 
+            < div  class =" dois " > 
+                < h1 > Barra lateral </ h1 > 
+                < ul > 
+                    < li  class =" active " > < a  href =" {{url_for('index')}} " > Índice </ a > </ li > 
+                    < li > < a  href =" {{url_for('view')}} " > Ver </ a > </ li > 
+                    < li > < a  href =" {{url_for('update')}} " > Atualizar </ a > </ li > 
+                    < li > < a  href =" {{url_for('logout')}} " > Sair </ a > </ li > 
+                </ ul >  
+            </ div > 
+            < div  class =" conteúdo " alinhar =" centro " > 
+                < div  class =" barra superior " > 
+                    < h2 > Bemvindo!! Você está na página principal!! </ h2 >                         
+                </ div > </ br > </ br > 
+                < div  class =" barra de conteúdo " > 
+                     < div  class =" msg " > {{ msg }} </ div > 
+                </ div >   
+                    </ div > 
+        </ div > 
+    </ corpo > 
+</ html > 
